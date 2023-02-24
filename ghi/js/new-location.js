@@ -10,7 +10,6 @@ window.addEventListener('DOMContentLoaded', async () => {
             option.value = state.abbreviation;
             option.innerHTML = state.name;
             selectTag.appendChild(option);
-
         }
         const formTag = document.getElementById('create-location-form');
         formTag.addEventListener('submit', async event => {
