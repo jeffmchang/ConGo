@@ -18,7 +18,7 @@ services:
     depends_on:
       - rabbitmq
       - database
-  react-attendees:
+  react:
     image: node:latest
     command: npm start
     working_dir: /app
