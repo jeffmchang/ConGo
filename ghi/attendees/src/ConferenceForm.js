@@ -101,7 +101,9 @@ function ConferenceForm(props) {
             <div className="offset-3 col-6">
                 <div className="shadow p-4 mt-4">
                     <h1>Create a new conference</h1>
-                    <form id="create-conf-form">
+                    <form
+                        onSubmit={handleSubmit}
+                        id="create-conf-form">
                         <div className="form-floating mb-3">
                             <input
                                 value={name}
@@ -185,7 +187,9 @@ function ConferenceForm(props) {
                                 })}
                             </select>
                         </div>
-                        <button className="btn btn-primary">Create</button>
+                        <button
+
+                            className="btn btn-primary">Create</button>
                     </form>
                 </div>
             </div>
