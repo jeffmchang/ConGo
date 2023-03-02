@@ -20,24 +20,24 @@ function App(props) {
 
     <BrowserRouter>
       <Nav />
-      <div className="my-5 container">
-        <Routes>
-          <Route index element={<MainPage />} />
-          <Route path="attendees">
-            <Route path="new" element={<AttendForm />} />
-            <Route path="" element={<AttendeesList attendees={props.attendees} />} />
-          </Route>
-          <Route path="conferences">
-            <Route path="new" element={<ConferenceForm />} />
-          </Route>
-          <Route path="locations">
-            <Route path="new" element={<LocationForm />} />
-          </Route>
-          <Route path="presentations">
-            <Route path="new" element={<PresentationForm />} />
-          </Route>
-        </Routes>
-      </div>
+
+      <Routes>
+        <Route index element={<MainPage />} />
+        <Route path="attendees">
+          <Route path="new" element={<AttendForm />} />
+          <Route path="" element={<AttendeesList attendees={props.attendees} />} />
+        </Route>
+        <Route path="conferences">
+          <Route path="new" element={<ConferenceForm />} />
+        </Route>
+        <Route path="locations">
+          <Route path="new" element={<LocationForm />} />
+        </Route>
+        <Route path="presentations">
+          <Route path="new" element={<PresentationForm />} />
+        </Route>
+      </Routes>
+
     </BrowserRouter>
 
   );
